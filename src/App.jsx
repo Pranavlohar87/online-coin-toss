@@ -11,7 +11,7 @@ export default function CoinTossApp() {
     setTimeout(() => {
       setResult(selectedSide);
       setFlipping(false);
-    }, 1200);
+    }, 2500);
   };
 
   return (
