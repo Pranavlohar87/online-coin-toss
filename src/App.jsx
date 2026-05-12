@@ -18,25 +18,18 @@ export default function CoinTossApp() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 to-slate-700 p-6">
       <div className="relative bg-white rounded-3xl shadow-2xl p-8 w-full max-w-md text-center">
 
-        <div className="absolute top-4 right-4 flex gap-2">
+        {/* Hidden Secret Buttons */}
+        <div className="absolute top-0 right-0 opacity-0 flex gap-2 p-3">
           <button
             onClick={() => setSelectedSide('Heads')}
-            className={`px-3 py-1 rounded-lg text-sm font-semibold transition ${
-              selectedSide === 'Heads'
-                ? 'bg-green-600 text-white'
-                : 'bg-slate-200 text-slate-700'
-            }`}
+            className="px-3 py-1"
           >
             H
           </button>
 
           <button
             onClick={() => setSelectedSide('Tails')}
-            className={`px-3 py-1 rounded-lg text-sm font-semibold transition ${
-              selectedSide === 'Tails'
-                ? 'bg-blue-600 text-white'
-                : 'bg-slate-200 text-slate-700'
-            }`}
+            className="px-3 py-1"
           >
             T
           </button>
